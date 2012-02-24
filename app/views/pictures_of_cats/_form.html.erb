@@ -1,0 +1,21 @@
+<%= form_for(@pictures_of_cat) do |f| %>
+  <% if @pictures_of_cat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pictures_of_cat.errors.count, "error") %> prohibited this pictures_of_cat from being saved:</h2>
+
+      <ul>
+      <% @pictures_of_cat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

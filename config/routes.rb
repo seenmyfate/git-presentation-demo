@@ -1,4 +1,6 @@
 GitDemo::Application.routes.draw do
+  resources :pictures_of_cats
+
   resources :comments
 
   resources :users
