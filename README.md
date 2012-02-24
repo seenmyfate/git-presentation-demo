@@ -101,9 +101,9 @@ with a IRB prompt in the server window. Here you can do things like:
 
   >> @posts.inspect
   => "[#<Post:0x14a6be8
-          @attributes={"title"=>nil, "body"=>nil, "id"=>"1"}>,
+	  @attributes={"title"=>nil, "body"=>nil, "id"=>"1"}>,
        #<Post:0x14a6620
-          @attributes={"title"=>"Rails", "body"=>"Only ten..", "id"=>"2"}>]"
+	  @attributes={"title"=>"Rails", "body"=>"Only ten..", "id"=>"2"}>]"
   >> @posts.first.title = "hello from a debugger"
   => "hello from a debugger"
 
@@ -134,9 +134,3 @@ Options:
   made to the database.
 * Passing an environment name as an argument will load the corresponding
   environment. Example: <tt>rails console production</tt>.
-
-To reload your controllers and models after launching the console run
-<tt>reload!</tt>
-
-
-

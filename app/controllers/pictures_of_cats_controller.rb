@@ -1,13 +1,13 @@
 class PicturesOfCatsController < ApplicationController
   # GET /pictures_of_cats
   # GET /pictures_of_cats.json
-  def index
-    @pictures_of_cats = PicturesOfCat.all
+	def index
+	@pictures_of_cats = PicturesOfCat.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @pictures_of_cats }
-    end
+	respond_to do |format|
+	format.html # index.html.erb
+	format.json { render json: @pictures_of_cats }
+	end
   end
 
   # GET /pictures_of_cats/1
