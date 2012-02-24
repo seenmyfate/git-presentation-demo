@@ -10,9 +10,10 @@ class PicturesOfCatsController < ApplicationController
 	end
   end
 
+
   # GET /pictures_of_cats/1
   # GET /pictures_of_cats/1.json
-  def show
+	def show
     @pictures_of_cat = PicturesOfCat.find(params[:id])
 
     respond_to do |format|
